@@ -9,7 +9,7 @@ class Source extends Equatable {
   factory Source.fromMap(Map<String, dynamic> map) {
     return Source(
       id: map['id'] != null ? map['id'] as String : null,
-      name: map['name']!= null ? map['name'] as String : null,
+      name: map['name'] != null ? map['name'] as String : null,
     );
   }
 

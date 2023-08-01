@@ -1,7 +1,5 @@
 import 'package:go_router/go_router.dart';
 import 'package:news_app/src/config/router/routes.dart';
-import 'package:news_app/src/domain/models/article.dart';
-import 'package:news_app/src/presentation/views/article_details_view.dart';
 import 'package:news_app/src/presentation/views/breaking_news_view.dart';
 import 'package:news_app/src/presentation/views/saved_articles_views.dart';
 

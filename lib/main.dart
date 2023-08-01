@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/src/config/router/app_router.dart';
+import 'package:news_app/src/config/theme/app_themes.dart';
 import 'package:news_app/src/domain/repositories/api_repository.dart';
 import 'package:news_app/src/locator.dart';
 import 'package:news_app/src/presentation/cubits/remote_articles/remote_articles_cubit.dart';
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         child: MaterialApp.router(
           debugShowCheckedModeBanner: false,
           routerConfig: router,
+          theme: AppTheme.light,
         ),
       ),
     );

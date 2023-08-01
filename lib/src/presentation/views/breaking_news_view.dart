@@ -26,7 +26,10 @@ class BreakingNewsView extends HookWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Daily News'),
+        title: const Text(
+          'Daily News',
+          style: TextStyle(color: Colors.black),
+        ),
         actions: [
           GestureDetector(
             onTap: () => context.push(Routes.savedArticles),

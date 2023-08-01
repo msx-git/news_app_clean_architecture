@@ -5,7 +5,6 @@ import 'package:go_router/go_router.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:oktoast/oktoast.dart';
 
-import '../../config/router/app_router.dart';
 import '../../domain/models/article.dart';
 import '../cubits/local_articles/local_articles_cubit.dart';
 
