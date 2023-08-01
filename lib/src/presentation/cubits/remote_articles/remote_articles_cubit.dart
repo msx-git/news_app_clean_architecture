@@ -31,7 +31,7 @@ class RemoteArticlesCubit
         final articles = response.data!.articles;
         final noMoreData = articles.length < kDefaultPageSize;
 
-        data.add(articles as Article);
+        data.addAll(articles);
         _page++;
 
         emit(RemoteArticlesSuccess(articles: data, noMoreData: noMoreData));

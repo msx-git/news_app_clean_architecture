@@ -15,11 +15,22 @@ class BreakingNewsResponse extends Equatable {
 
   factory BreakingNewsResponse.fromMap(Map<String, dynamic> map) {
     return BreakingNewsResponse(
-      status: map['status'] as String,
-      totalResult: map['totalResult'] as int,
-      articles: map['articles'] as List<Article>,
+      status: (map['status'] ?? '') as String,
+      totalResult: (map['totalResults'] ?? 0) as int,
+      articles: List<Article>.from(
+        map['articles'].map<Article>(
+              (x) => Article.fromMap(x as Map<String, dynamic>),
+        ),
+      ),
     );
   }
+  // factory BreakingNewsResponse.fromMap(Map<String, dynamic> map) {
+  //   return BreakingNewsResponse(
+  //     status: map['status'] as String,
+  //     totalResult: map['totalResult'] as int,
+  //     articles: map['articles'] as List<Article>,
+  //   );
+  // }
 
   @override
   List<Object> get props => [status, totalResult, articles];

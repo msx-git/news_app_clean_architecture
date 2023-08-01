@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:retrofit/dio.dart';
 
-import '../../utils/resources/data_state.dart';
+import '../../../utils/resources/data_state.dart';
 
 abstract class BaseApiRepository {
   @protected

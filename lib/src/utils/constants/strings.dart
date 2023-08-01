@@ -7,4 +7,4 @@ const String kApiKey = '4d482f8eeef44437adf57b496c0a62b0';
 
 //Storage and Database
 const String kArticlesTableName = 'articles_table';
-const String databaseName = 'app_database.db';
+const String kDatabaseName = 'app_database.db';

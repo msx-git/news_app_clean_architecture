@@ -4,7 +4,7 @@ import 'package:news_app/src/domain/models/responses/breaking_news_response.dart
 import 'package:news_app/src/utils/resources/data_state.dart';
 
 import '../../domain/repositories/api_repository.dart';
-import '../base/base_api_repository.dart';
+import 'base/base_api_repository.dart';
 
 class ApiRepositoryImpl extends BaseApiRepository implements ApiRepository {
   final NewsApiService _newsApiService;

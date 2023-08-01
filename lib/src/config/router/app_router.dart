@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:news_app/src/config/router/routes.dart';
+import 'package:news_app/src/domain/models/article.dart';
 import 'package:news_app/src/presentation/views/article_details_view.dart';
 import 'package:news_app/src/presentation/views/breaking_news_view.dart';
 import 'package:news_app/src/presentation/views/saved_articles_views.dart';
@@ -13,11 +14,11 @@ final router = GoRouter(
       path: Routes.breakingNews,
       builder: (context, state) => const BreakingNewsView(),
     ),
-    GoRoute(
-      name: 'Article Details View',
-      path: Routes.articleDetails,
-      builder: (context, state) => const ArticleDetailsView(),
-    ),
+    // GoRoute(
+    //   name: 'Article Details View',
+    //   path: Routes.articleDetails,
+    //   builder: (context, state) => const ArticleDetailsView(article: null),
+    // ),
     GoRoute(
       name: 'Saved Articles View',
       path: Routes.savedArticles,
